@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Mahasiswa/Dosen</title>
+</head>
+<body>
+
+<form action="proses_formulir.php" method="post">
+    <label for="nama">Nama Lengkap:</label>
+    <input type="text" id="nama" name="nama" required>
+    <br>
+
+    <label for="prodi">Asal Prodi:</label>
+    <input type="text" id="prodi" name="prodi" value="TI" readonly>
+    <br>
+
+    <label for="status">Status:</label>
+    <select id="status" name="status">
+        <option value="Mahasiswa" selected>Mahasiswa</option>
+        <option value="Dosen">Dosen</option>
+    </select>
+    <br>
+
+    <label for="kendaraan">Motor atau Mobil:</label>
+    <input type="text" id="kendaraan" name="kendaraan" required>
+    <br>
+
+    <label for="nopol">Nopol:</label>
+    <input type="text" id="nopol" name="nopol" required>
+    <br>
+
+    <label for="merk">Merk:</label>
+    <input type="text" id="merk" name="merk" required>
+    <br>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

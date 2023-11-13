@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman dengan CSS</title>
+    <!-- Mengaitkan file CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+form {
+  max-width: 400px;
+  margin: 12px auto;
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 9px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 9px;
+  display: none;
+}
+
+</style>
+</head>
+<form>
+  <div class="form-group row">
+    <label for="nama lenkap" class="col-3 col-form-label">nama lengkap</label> 
+    <div class="col-6">
+      <input id="nama lenkap" name="nama lenkap" type="text" class="form-control">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="prodi" class="col-3 col-form-label">prodi</label> 
+    <div class="col-6">
+      <div class="input-group">
+        <input id="prodi" name="prodi" type="text" class="form-control"> 
+        <div class="input-group-append">
+          <div class="input-group-text">
+            <i class="fa fa-angle-down"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="status" class="col-3 col-form-label">status</label> 
+    <div class="col-6">
+      <input id="status" name="status" type="text" class="form-control">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-4">jenis kendaraan</label> 
+    <div class="col-6">
+      <div class="custom-control custom-radio custom-control-inline">
+        <input name="jenis kendaraan" id="jenis kendaraan_0" type="radio" class="custom-control-input" value="motor"> 
+        <label for="jenis kendaraan_0" class="custom-control-label">motor</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input name="jenis kendaraan" id="jenis kendaraan_1" type="radio" class="custom-control-input" value="mobil"> 
+        <label for="jenis kendaraan_1" class="custom-control-label">mobil</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input name="jenis kendaraan" id="jenis kendaraan_2" type="radio" class="custom-control-input" value="jalan kaki"> 
+        <label for="jenis kendaraan_2" class="custom-control-label">jalan kaki</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="nopol" class="col-3 col-form-label">nopol</label> 
+    <div class="col-6">
+      <input id="nopol" name="nopol" type="text" class="form-control">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="merk" class="col-3 col-form-label">merk</label> 
+    <div class="col-6">
+      <input id="merk" name="merk" type="text" class="form-control">
+    </div>
+  </div> 
+  <div class="form-group row">
+    <div class="offset-4 col-8">
+      <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</form>
